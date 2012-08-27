@@ -113,6 +113,10 @@ aside.bubble {
         line-height: 1.5em;
         @include font-size(18);
     }
+
+    a {
+        color: #FFF;
+    }
 }
 
 /**

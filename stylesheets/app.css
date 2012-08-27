@@ -4300,11 +4300,15 @@ aside.bubble a:hover {
   font-size: 18px;
   font-size: 1.8rem;
 }
+/* line 117, ../sass/app.scss */
+#coming-soon a {
+  color: #FFF;
+}
 
 /**
  * Facebook
  */
-/* line 122, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 #facebook {
   background: #3b5998;
   width: 50px;
@@ -4316,7 +4320,7 @@ aside.bubble a:hover {
 /**
  * Twitter
  */
-/* line 136, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 #twitter {
   background: #00a0d1;
   width: 50px;
