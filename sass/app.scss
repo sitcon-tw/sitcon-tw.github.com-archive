@@ -37,11 +37,16 @@ html, body {
     color: #FFF;
     text-align: center;
 
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
 
     .has-tip {
+        border: none;
+    }
+
+    &.has-tip {
         border: none;
         color: #FFF;
 
@@ -54,7 +59,7 @@ html, body {
     @include border-radius(50%);
 }
 
-aside.bubble {
+aside.bubble-wrapper {
     header {
         display: none;
     }
@@ -79,7 +84,7 @@ aside.bubble {
  * SITCON
  */
 
-#sitcon {
+#sitcon h1{
     background: #a4c639;
 
     width: 250px;
@@ -87,7 +92,7 @@ aside.bubble {
 
     margin-top: -125px;
     margin-left: -125px;
-    padding: 91.5px 0;
+    padding: 103px 0;
 
     h1 {
       @include font-size(36);
@@ -123,7 +128,7 @@ aside.bubble {
  * Facebook
  */
 
-#facebook {
+#facebook a{
     background: #3b5998;
 
     width: 50px;
@@ -137,7 +142,7 @@ aside.bubble {
  * Twitter
  */
 
-#twitter {
+#twitter a{
     background: #00a0d1;
 
     width: 50px;

@@ -4223,6 +4223,7 @@ html, body {
 .bubble {
   color: #FFF;
   text-align: center;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4232,31 +4233,35 @@ html, body {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 44, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 .bubble .has-tip {
   border: none;
+}
+/* line 49, ../sass/app.scss */
+.bubble.has-tip {
+  border: none;
   color: #FFF;
 }
-/* line 48, ../sass/app.scss */
-.bubble .has-tip:hover {
+/* line 53, ../sass/app.scss */
+.bubble.has-tip:hover {
   border: none;
   color: #FFF;
 }
 
-/* line 58, ../sass/app.scss */
-aside.bubble header {
+/* line 63, ../sass/app.scss */
+aside.bubble-wrapper header {
   display: none;
 }
-/* line 62, ../sass/app.scss */
-aside.bubble a {
+/* line 67, ../sass/app.scss */
+aside.bubble-wrapper a {
   color: #FFF;
 }
-/* line 65, ../sass/app.scss */
-aside.bubble a:hover {
+/* line 70, ../sass/app.scss */
+aside.bubble-wrapper a:hover {
   color: #FFF;
 }
 
-/* line 71, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .social-icon {
   font-family: "Social";
   line-height: 50px;
@@ -4267,17 +4272,17 @@ aside.bubble a:hover {
 /**
  * SITCON
  */
-/* line 82, ../sass/app.scss */
-#sitcon {
+/* line 87, ../sass/app.scss */
+#sitcon h1 {
   background: #a4c639;
   width: 250px;
   height: 250px;
   margin-top: -125px;
   margin-left: -125px;
-  padding: 91.5px 0;
+  padding: 103px 0;
 }
-/* line 92, ../sass/app.scss */
-#sitcon h1 {
+/* line 97, ../sass/app.scss */
+#sitcon h1 h1 {
   font-size: 36px;
   font-size: 3.6rem;
 }
@@ -4285,7 +4290,7 @@ aside.bubble a:hover {
 /**
  * Coming Soon
  */
-/* line 101, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 #coming-soon {
   background: #0060a3;
   width: 150px;
@@ -4294,13 +4299,13 @@ aside.bubble a:hover {
   margin-left: 150px;
   padding: 34px 0;
 }
-/* line 112, ../sass/app.scss */
+/* line 117, ../sass/app.scss */
 #coming-soon h1 {
   line-height: 1.5em;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 117, ../sass/app.scss */
+/* line 122, ../sass/app.scss */
 #coming-soon a {
   color: #FFF;
 }
@@ -4308,8 +4313,8 @@ aside.bubble a:hover {
 /**
  * Facebook
  */
-/* line 126, ../sass/app.scss */
-#facebook {
+/* line 131, ../sass/app.scss */
+#facebook a {
   background: #3b5998;
   width: 50px;
   height: 50px;
@@ -4320,8 +4325,8 @@ aside.bubble a:hover {
 /**
  * Twitter
  */
-/* line 140, ../sass/app.scss */
-#twitter {
+/* line 145, ../sass/app.scss */
+#twitter a {
   background: #00a0d1;
   width: 50px;
   height: 50px;
