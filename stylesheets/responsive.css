@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/**
+ * SITCON Responsive
+ *
+ * @author 蒼時弦也
+ */
+/**
+ * Under 768px
+ */
+@media only screen and (max-width: 767px) {
+  /**
+   * Global
+   */
+  /* line 19, ../sass/responsive.scss */
+  .bubble {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+
+  /**
+   * SITCON
+   */
+  /* line 27, ../sass/responsive.scss */
+  #sitcon {
+    width: 100%;
+    height: 75px;
+    margin-top: -126px;
+    margin-left: -50%;
+    padding: 0;
+  }
+  /* line 36, ../sass/responsive.scss */
+  #sitcon h1 {
+    line-height: 1.5em;
+  }
+
+  /**
+   * Coming Soon
+   */
+  /* line 45, ../sass/responsive.scss */
+  #coming-soon {
+    width: 100%;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50%;
+    padding: 0;
+    padding-top: 10px;
+  }
+  /* line 54, ../sass/responsive.scss */
+  #coming-soon h1 {
+    line-height: 1.5em;
+  }
+
+  /**
+   * Facebook
+   */
+  /* line 63, ../sass/responsive.scss */
+  #facebook {
+    width: 50%;
+    height: 50px;
+    margin-top: 51px;
+    margin-left: -50%;
+  }
+
+  /**
+   * Twitter
+   */
+  /* line 75, ../sass/responsive.scss */
+  #twitter {
+    width: 50%;
+    height: 50px;
+    margin-top: 51px;
+    margin-left: 1px;
+  }
+}
