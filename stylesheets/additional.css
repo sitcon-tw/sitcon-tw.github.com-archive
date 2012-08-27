@@ -1,0 +1,11 @@
+.bubble {
+	box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+}
+.bubble:hover {
+	box-shadow: 5px 5px 12px -2px rgba(20%,20%,40%,0.75);
+}
