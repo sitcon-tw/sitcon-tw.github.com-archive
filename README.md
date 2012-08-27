@@ -1,20 +1,20 @@
 SITCON - Students' Information Technology Conference (學生計算機年會)
 =====================================================================
 
-(http://sitcon.org) 的網站程式碼主體
+<http://sitcon.org> 的網站程式碼主體
 
 主體架構
 --------
 
-* [javascripts](./tree/master/javascripts) -- JavaScript程式碼
-* [images](./tree/master/images) -- 所有的圖型檔
-* [stylesheets](./tree/master/stylesheets) -- Production用的CSS資料夾(這個會被覆蓋sass的資料)
-* [sass](./tree/master/sass) -- 開發階段用的[Syntactically Awesome Stylesheets][SASS]資料夾
+* [javascripts](./sitcon-tw.github.com/tree/master/javascripts) -- JavaScript程式碼
+* [images](./sitcon-tw.github.com/tree/master/images) -- 所有的圖型檔
+* [stylesheets](./sitcon-tw.github.com/tree/master/stylesheets) -- Production用的CSS資料夾(這個會被覆蓋sass的資料)
+* [sass](./sitcon-tw.github.com/tree/master/sass) -- 開發階段用的[Syntactically Awesome Stylesheets][SASS]資料夾
 
 如何協做？
 ----------
 
-歡迎大家來做網頁！但是要注意自己修改的東西不要存在[stylesheets](./tree/master/stylesheets)裡面喔！
+歡迎大家來做網頁！但是要注意自己修改的東西不要存在[stylesheets](./sitcon-tw.github.com/tree/master/stylesheets)裡面喔！
 因為在那個資料夾內的東西都會在sass編譯的時候覆蓋掉！那麼要怎麼建立環境呢？
 
 ### 事前準備工作
@@ -65,7 +65,7 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 貢獻
 ----
 
-這份說明文件的初版是由 **腹黒い茶 -<m50gbmb@gmail.com>-**　所完成的，所有的內容皆可以由任何人修改並且重新發佈
+這份說明文件的初版是由 **腹黒い茶 <<m50gbmb@gmail.com>>**　所完成的，所有的內容皆可以由任何人修改並且重新發佈
 
 
 [SASS]: http://sass-lang.com
