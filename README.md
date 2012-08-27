@@ -8,7 +8,7 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 
 * [javascripts](./sitcon-tw.github.com/tree/master/javascripts) -- JavaScript程式碼
 * [images](./sitcon-tw.github.com/tree/master/images) -- 所有的圖型檔
-* [stylesheets](./sitcon-tw.github.com/tree/master/stylesheets) -- Production用的CSS資料夾(這個會被覆蓋sass的資料)
+* [stylesheets](./sitcon-tw.github.com/tree/master/stylesheets) -- Production用的CSS資料夾(這個會被處理過後的sass資料覆蓋)
 * [sass](./sitcon-tw.github.com/tree/master/sass) -- 開發階段用的[Syntactically Awesome Stylesheets][SASS]資料夾
 
 如何協做？
