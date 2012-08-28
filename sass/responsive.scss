@@ -24,6 +24,9 @@
    * Global
    */
 
+  body[orient="portrait"] { min-height: 540px; }
+  body[orient="landscape"] { min-height: 400px; }
+
   .bubble {
       @include border-radius(0);
 
