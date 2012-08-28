@@ -1,1 +1,86 @@
-@media only screen and (max-width: 767px){.bubble{-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0}#sitcon h1{width:100%;height:75px;margin-top:-126px;margin-left:-50%;padding:0;padding-top:15px}#sitcon h1 h1{line-height:1.5em}#coming-soon{width:100%;height:100px;margin-top:-50px;margin-left:-50%;padding:0;padding-top:10px}#coming-soon h1{line-height:1.5em}#facebook a{width:50%;height:50px;margin-top:51px;margin-left:-50%}#twitter a{width:50%;height:50px;margin-top:51px;margin-left:1px}}
+@charset "UTF-8";
+/**
+ * SITCON Responsive
+ *
+ * @author 蒼時弦也
+ */
+/**
+ * Under 768px
+ */
+@media only screen and (max-width: 767px) {
+  /**
+   * Global
+   */
+  /* line 27, ../sass/responsive.scss */
+  .bubble {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  /* line 30, ../sass/responsive.scss */
+  .bubble:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  /**
+   * SITCON
+   */
+  /* line 39, ../sass/responsive.scss */
+  #sitcon h1 {
+    width: 100%;
+    height: 75px;
+    margin-top: -126px;
+    margin-left: -50%;
+    padding: 0;
+    padding-top: 15px;
+  }
+  /* line 49, ../sass/responsive.scss */
+  #sitcon h1 h1 {
+    line-height: 1.5em;
+  }
+
+  /**
+   * Coming Soon
+   */
+  /* line 58, ../sass/responsive.scss */
+  #coming-soon a {
+    width: 100%;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50%;
+    padding: 0;
+    padding-top: 25px;
+  }
+  /* line 67, ../sass/responsive.scss */
+  #coming-soon a h1 {
+    line-height: 1.5em;
+  }
+
+  /**
+   * Facebook
+   */
+  /* line 76, ../sass/responsive.scss */
+  #facebook a {
+    width: 50%;
+    height: 50px;
+    margin-top: 51px;
+    margin-left: -50%;
+  }
+
+  /**
+   * Twitter
+   */
+  /* line 88, ../sass/responsive.scss */
+  #twitter a {
+    width: 50%;
+    height: 50px;
+    margin-top: 51px;
+    margin-left: 1px;
+  }
+}

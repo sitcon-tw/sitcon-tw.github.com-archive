@@ -7,6 +7,14 @@
 @import "compass";
 @import "foundation/mixins/font-size";
 
+@mixin transform($style) {
+	-webkit-transform: $style;
+	-moz-transform: $style;
+	-ms-transform: $style;
+	-o-transform: $style;
+	transform: $style;
+}
+
 /**
  * Under 768px
  */
@@ -18,6 +26,10 @@
 
   .bubble {
       @include border-radius(0);
+
+      &:hover {
+          @include transform(none);
+      }
   }
 
   /**
@@ -43,14 +55,14 @@
    * Coming Soon
    */
 
-  #coming-soon {
+  #coming-soon a{
       width: 100%;
       height: 100px;
 
       margin-top: -50px;
       margin-left: -50%;
       padding: 0;
-      padding-top: 10px;
+      padding-top: 25px;
 
       h1 {
           line-height: 1.5em;

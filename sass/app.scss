@@ -2,7 +2,19 @@
 @import "settings";
 
 // Comment out this import if you are customizing you imports below
-@import "foundation";
+@import "compass/css3";
+@import "foundation/settings";
+@import "foundation/functions/all";
+@import "foundation/common/globals";
+@import "foundation/mixins/clearfix";
+@import "modular-scale";
+
+@import "foundation/mixins/css-triangle";
+@import "foundation/mixins/font-size";
+
+@import "foundation/common/typography";
+
+@import "foundation/components/modules/ui";
 
 /**
  * SITCON Stylesheet
@@ -113,7 +125,7 @@ aside.bubble-wrapper {
     margin-left: 150px;
 
     color: #FFF;
-    
+
     padding: 48px 0;
 
     line-height: 1.5em;
