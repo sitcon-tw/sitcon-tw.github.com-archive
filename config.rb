@@ -1,3 +1,5 @@
+Encoding.default_external = 'utf-8' #Fix compile problems for Windows Users by Haraguroicha
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:

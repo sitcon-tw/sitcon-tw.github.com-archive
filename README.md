@@ -25,7 +25,7 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 
 由於各位的開發環境不盡相同，這裡分為幾個部分來做為環境建置的解說：
 
-#### Mac OS X
+##### Mac OS X
 
 首先，您需要有MacPort，之後僅要按照下列步驟完成即可開始使用
 
@@ -37,18 +37,23 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 
 在完成上列步驟之後，您就可以開始使用了！
 
-#### Linux/Ubuntu
+##### Linux/Ubuntu
 
 待補
 
-#### Linux/Fedora/Other
+##### Linux/Fedora/Other
 
 待補
 
-#### Windows
+##### Windows
 
-待補
+請先至<http://www.ruby-lang.org/en/downloads/>下載最新版的RubyInstaller，並且在安裝過程中設定Add Ruby to PATH和Associate .rb and .rbw的選項之後開啟命令提示字元`cmd`開始下列指令
 
+    gem update --system
+    gem install compass -V
+    gem install zurb-foundation -V
+
+安裝完成後即可開始使用。
 
 ### 環境弄好了之後如何開始使用？
 
@@ -60,6 +65,29 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 
 如果是要準備push上來的，就麻煩使用 `compass compile --output-style compressed --no-line-comments` 這個指令
 這樣給大家所瀏覽的網頁才不會檔案特別龐大需要載入很久喔！
+
+
+使用GUI編輯器
+-------------
+
+### Sublime Text 2
+
+如果需要在編輯器中自動的產生SASS文檔的話，可以新增一個compass用的build，並且在新增的build裡面依照作業系統的不同貼入下列內容
+
+##### Mac OS X
+
+    {
+    	"cmd": ["compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
+    	"working_dir": "${project_dir:${folder}}"
+    }
+
+##### Windows
+
+    {
+    	"cmd": ["cmd", "/c", "compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
+    	"working_dir": "${project_dir:${folder}}",
+    	"encoding": "cp950"
+    }
 
 
 貢獻
