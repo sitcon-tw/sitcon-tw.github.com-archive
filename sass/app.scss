@@ -59,6 +59,8 @@ html, body {
     @include border-radius(50%);
 }
 
+@import "additional.scss"; //Add by Haraguroicha
+
 aside.bubble-wrapper {
     header {
         display: none;
@@ -94,16 +96,14 @@ aside.bubble-wrapper {
     margin-left: -125px;
     padding: 103px 0;
 
-    h1 {
-      @include font-size(36);
-    }
+    @include font-size(44);
 }
 
 /**
  * Coming Soon
  */
 
-#coming-soon {
+#coming-soon a{
     background: #0060a3;
 
     width: 150px;
@@ -112,16 +112,12 @@ aside.bubble-wrapper {
     margin-top: -75px;
     margin-left: 150px;
 
-    padding: 34px 0;
+    color: #FFF;
+    
+    padding: 48px 0;
 
-    h1 {
-        line-height: 1.5em;
-        @include font-size(18);
-    }
-
-    a {
-        color: #FFF;
-    }
+    line-height: 1.5em;
+    @include font-size(18);
 }
 
 /**
