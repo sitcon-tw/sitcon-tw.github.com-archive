@@ -72,21 +72,15 @@ SITCON - Students' Information Technology Conference (學生計算機年會)
 
 ### Sublime Text 2
 
-如果需要在編輯器中自動的產生SASS文檔的話，可以新增一個compass用的build，並且在新增的build裡面依照作業系統的不同貼入下列內容
-
-##### Mac OS X
+如果需要在編輯器中自動的產生SASS文檔的話，可以新增一個compass用的build，並且在新增的build裡面貼入下列內容
 
     {
-    	"cmd": ["compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
-    	"working_dir": "${project_dir:${folder}}"
-    }
-
-##### Windows
-
-    {
-    	"cmd": ["cmd", "/c", "compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
-    	"working_dir": "${project_dir:${folder}}",
-    	"encoding": "cp950"
+        "cmd": ["compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
+        "working_dir": "${project_path:${folder}}",
+        "windows": {
+            "cmd": ["cmd", "/c", "compass", "compile", "--output-style", "compressed", "--no-line-comments", "--time", "--boring"],
+            "encoding": "cp950"
+        }
     }
 
 
