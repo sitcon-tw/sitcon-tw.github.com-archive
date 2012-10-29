@@ -1,0 +1,174 @@
+@import url("http://fonts.googleapis.com/css?family=Arimo:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+/* ========================================================================== HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) ========================================================================== */
+/* line 9, ../sass/main.css.scss */
+html, button, input, select, textarea { color: #222; }
+
+/* line 13, ../sass/main.css.scss */
+body { font-size: 1em; line-height: 1.4; }
+
+/* line 18, ../sass/main.css.scss */
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+
+/* line 23, ../sass/main.css.scss */
+::selection { background: #b3d4fc; text-shadow: none; }
+
+/* line 28, ../sass/main.css.scss */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+/* line 37, ../sass/main.css.scss */
+img { vertical-align: middle; }
+
+/* line 41, ../sass/main.css.scss */
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* line 47, ../sass/main.css.scss */
+textarea { resize: vertical; }
+
+/* line 51, ../sass/main.css.scss */
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+
+/* ========================================================================== Author's custom styles ========================================================================== */
+/** Mixins */
+/** Font */
+/** Basic */
+/* line 80, ../sass/main.css.scss */
+html, body { font-size: 13px; height: 100%; }
+
+/* line 86, ../sass/main.css.scss */
+body { background: #d9d9d9; font-family: "微軟正黑體", "Helvetica Neue", "Helvetica", Helvetica, "Apple LiGothic", Arial, sans-serif; }
+
+/* line 95, ../sass/main.css.scss */
+a { color: #296ea3; text-decoration: none; }
+
+/* line 100, ../sass/main.css.scss */
+p { letter-spacing: .1em; line-height: 1.5em; }
+
+/** Header & Footer */
+/* line 111, ../sass/main.css.scss */
+header[role="header"] h1 { margin-top: -300px; color: #FFF; }
+/* line 116, ../sass/main.css.scss */
+header[role="header"] h1 a { display: block; width: 400px; height: 400px; text-indent: -99999px; margin: 0 auto; background: url('../images/header.png?1350866388') center no-repeat; background-size: contain; }
+
+/* line 131, ../sass/main.css.scss */
+footer[role="footer"] { background: #a3c639; padding: 2em; margin-top: 3em; color: #FFF; text-align: right; }
+
+/** Navigation */
+/* line 146, ../sass/main.css.scss */
+nav[role="mainMenu"] { background: #000; background: rgba(0, 0, 0, 0.8); position: fixed; top: 0; z-index: 999; width: 100%; }
+/* line 156, ../sass/main.css.scss */
+nav[role="mainMenu"] header { display: none; }
+/* line 160, ../sass/main.css.scss */
+nav[role="mainMenu"] ul { text-align: center; margin: 1rem auto; }
+/* line 166, ../sass/main.css.scss */
+nav[role="mainMenu"] li { display: inline; }
+/* line 170, ../sass/main.css.scss */
+nav[role="mainMenu"] li.active a, nav[role="mainMenu"] li:hover a { color: #FFF; }
+/* line 176, ../sass/main.css.scss */
+nav[role="mainMenu"] a { font-family: "Arimo", sans-serif; font-size: 14px; font-size: 1.076923rem; text-transform: uppercase; letter-spacing: .15em; color: gray; padding: 0 12px; padding: 0 1rem; }
+
+/** Misc */
+/* line 194, ../sass/main.css.scss */
+#timeline { background: #a3c639; width: 4px; height: 100%; position: fixed; top: 50%; left: 50%; margin-left: -2px; }
+
+/* line 207, ../sass/main.css.scss */
+.subHeader { color: #4d4d4d; }
+
+/** Main Frame */
+/* line 219, ../sass/main.css.scss */
+#mainFrame { position: absolute; top: 50%; width: 100%; }
+
+/* line 226, ../sass/main.css.scss */
+.block { background: #FFF; margin-top: 3em; padding: .5em 1em; position: relative; }
+/* line 234, ../sass/main.css.scss */
+.block article { padding: 0 1em; }
+/* line 237, ../sass/main.css.scss */
+.block article h2, .block article h3 { font-family: "Arimo", sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+
+/* line 245, ../sass/main.css.scss */
+.crossBlock { border: 2px solid #d9d9d9; }
+
+/* line 250, ../sass/main.css.scss */
+.arrowLeft:before { content: " "; display: block; width: 0; height: 0; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: .5em solid #FFF; position: absolute; top: .5em; left: -0.4em; }
+
+/* line 270, ../sass/main.css.scss */
+.arrowRight:after { content: " "; display: block; width: 0; height: 0; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-left: .5em solid #FFF; position: absolute; top: .5em; right: -0.4em; }
+
+/* line 289, ../sass/main.css.scss */
+header[role="pageHeader"] { display: none; }
+
+/** Home Page */
+/* line 297, ../sass/main.css.scss */
+#siteInfo { text-align: center; }
+/* line 300, ../sass/main.css.scss */
+#siteInfo .block:first-child { margin-top: 0; }
+/* line 304, ../sass/main.css.scss */
+#siteInfo h3 { font-weight: normal; }
+
+/** Call for Paper */
+/* line 318, ../sass/main.css.scss */
+#cfp li, #cfp p { line-height: 1.8em; letter-spacing: .2em; }
+
+/** About */
+/** Session */
+/* line 339, ../sass/main.css.scss */
+#sessions .tableHeader .block { margin-top: 3em; }
+/* line 344, ../sass/main.css.scss */
+#sessions .block { margin-top: 1em; margin-bottom: 0; }
+/* line 349, ../sass/main.css.scss */
+#sessions .sessionTitle { text-align: center; font-size: 14px; font-size: 1.076923rem; font-weight: bold; }
+
+/* ========================================================================== Media Queries ========================================================================== */
+/* ========================================================================== Helper classes ========================================================================== */
+/* line 380, ../sass/main.css.scss */
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+
+/* line 387, ../sass/main.css.scss */
+.ir:before { content: ""; display: block; width: 0; height: 100%; }
+
+/* line 394, ../sass/main.css.scss */
+.hidden { display: none !important; visibility: hidden; }
+
+/* line 399, ../sass/main.css.scss */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* line 411, ../sass/main.css.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* line 420, ../sass/main.css.scss */
+.invisible { visibility: hidden; }
+
+/* line 425, ../sass/main.css.scss */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+/* line 430, ../sass/main.css.scss */
+.clearfix:after { clear: both; }
+
+/* line 434, ../sass/main.css.scss */
+.clearfix { *zoom: 1; }
+
+/* ========================================================================== Print styles ========================================================================== */
+@media print { /* line 443, ../sass/main.css.scss */
+  * { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
+  /* line 451, ../sass/main.css.scss */
+  a, a:visited { text-decoration: underline; }
+  /* line 455, ../sass/main.css.scss */
+  a[href]:after { content: " (" attr(href) ")"; }
+  /* line 459, ../sass/main.css.scss */
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  /* Don't show links for images, or javascript/internal links */
+  /* line 469, ../sass/main.css.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  /* line 474, ../sass/main.css.scss */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  /* line 479, ../sass/main.css.scss */
+  thead { display: table-header-group; /* h5bp.com/t */ }
+  /* line 484, ../sass/main.css.scss */
+  tr, img { page-break-inside: avoid; }
+  /* line 488, ../sass/main.css.scss */
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  /* line 498, ../sass/main.css.scss */
+  p, h2, h3 { orphans: 3; widows: 3; }
+  /* line 504, ../sass/main.css.scss */
+  h2, h3 { page-break-after: avoid; } }
