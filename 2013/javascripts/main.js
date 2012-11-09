@@ -1,7 +1,7 @@
 (function() {
 
   $(document).ready(function() {
-    return $("#mainMenu a").click(function(e) {
+    $("#mainMenu a").click(function(e) {
       $("html, body").animate({
         scrollTop: $($(this).attr("href")).offset().top - 100
       }, {
@@ -9,6 +9,14 @@
         easing: "easeInOutQuad"
       });
       return e.preventDefault();
+    });
+    return $("#mainMenu li").each(function(index, value) {
+      return $(value).bind("activate", function() {
+        $("#mainMenu li a").each(function(index, value) {
+          return $($(value).attr("href")).fadeTo('fast', 0.5);
+        });
+        return $($(value).children("a").attr("href")).fadeTo('fast', 1);
+      });
     });
   });
 
