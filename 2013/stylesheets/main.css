@@ -1,178 +1,519 @@
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Arimo:400,700");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
-/* ========================================================================== HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) ========================================================================== */
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
 /* line 9, ../sass/main.scss */
-html, button, input, select, textarea { color: #222; }
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
 
 /* line 13, ../sass/main.scss */
-body { font-size: 1em; line-height: 1.4; }
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
 
 /* line 18, ../sass/main.scss */
-::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
 /* line 23, ../sass/main.scss */
-::selection { background: #b3d4fc; text-shadow: none; }
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
 /* line 28, ../sass/main.scss */
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
 /* line 37, ../sass/main.scss */
-img { vertical-align: middle; }
+img {
+  vertical-align: middle;
+}
 
 /* line 41, ../sass/main.scss */
-fieldset { border: 0; margin: 0; padding: 0; }
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
 /* line 47, ../sass/main.scss */
-textarea { resize: vertical; }
+textarea {
+  resize: vertical;
+}
 
 /* line 51, ../sass/main.scss */
-.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
-/* ========================================================================== Author's custom styles ========================================================================== */
-/** Mixins */
-/** Font */
-/** Basic */
-/* line 79, ../sass/main.scss */
-html, body { font-size: 13px; height: 100%; }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/**
+ * Mixins
+ */
+/**
+ * Clear Fix
+ */
+/**
+ * Grid Count
+ */
+/**
+ * Fonts
+ */
+/**
+ * Main
+ */
+/* line 78, ../sass/main.scss */
+html {
+  font-size: 12px;
+}
 
-/* line 85, ../sass/main.scss */
-body { background: #d9d9d9; font-family: "微軟正黑體", "Helvetica Neue", "Helvetica", Helvetica, "Apple LiGothic", Arial, sans-serif; }
+/* line 82, ../sass/main.scss */
+body {
+  background: url('../images/background.png?1339701544');
+  font: 12px/18px "微軟正黑體", "Microsoft JhengHei", "STHeiti", "Heiti TC", SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.15em;
+}
 
-/* line 94, ../sass/main.scss */
-a { color: #296ea3; text-decoration: none; }
+/* line 88, ../sass/main.scss */
+a {
+  color: #2C7FDD;
+  text-decoration: none;
+}
 
-/* line 99, ../sass/main.scss */
-p { letter-spacing: .1em; line-height: 1.5em; }
+/* line 93, ../sass/main.scss */
+.button {
+  background: #2C7FDD;
+  color: white;
+  padding: 0.6em 2em;
+  font-size: 14px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  border: none;
+}
 
-/** Header & Footer */
-/* line 110, ../sass/main.scss */
-header[role="header"] h1 { margin-top: -300px; color: #FFF; }
+/* line 107, ../sass/main.scss */
+#wrapper {
+  background: white;
+  width: 960px;
+  margin: 36px auto;
+  margin: 3rem auto;
+}
+
 /* line 115, ../sass/main.scss */
-header[role="header"] h1 a { display: block; width: 400px; height: 400px; text-indent: -99999px; margin: 0 auto; background: url('../images/header.png?1350866388') center no-repeat; background-size: contain; }
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
 
-/* line 130, ../sass/main.scss */
-footer[role="footer"] { background: #a3c639; padding: 2em; margin-top: 3em; color: #FFF; text-align: right; }
+/**
+ * Grids
+ */
+/* line 26, ../sass/_mixin.scss */
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+/* line 9, ../sass/_mixin.scss */
+.row:before, .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 16, ../sass/_mixin.scss */
+.row:after {
+  clear: both;
+}
 
-/** Navigation */
-/* line 145, ../sass/main.scss */
-nav[role="mainMenu"] { background: #000; background: rgba(0, 0, 0, 0.8); position: fixed; top: 0; z-index: 999; width: 100%; }
-/* line 155, ../sass/main.scss */
-nav[role="mainMenu"] header { display: none; }
-/* line 159, ../sass/main.scss */
-nav[role="mainMenu"] ul { text-align: center; margin: 1rem auto; }
-/* line 165, ../sass/main.scss */
-nav[role="mainMenu"] li { display: inline; }
-/* line 169, ../sass/main.scss */
-nav[role="mainMenu"] li.active a, nav[role="mainMenu"] li:hover a { color: #FFF; }
-/* line 175, ../sass/main.scss */
-nav[role="mainMenu"] a { font-family: "Arimo", sans-serif; font-size: 14px; font-size: 1.076923rem; text-transform: uppercase; letter-spacing: .15em; color: gray; padding: 0 12px; padding: 0 1rem; }
+/* line 32, ../sass/_mixin.scss */
+[class*="span"] {
+  margin-left: 20px;
+  float: left;
+}
 
-/** Misc */
-/* line 193, ../sass/main.scss */
-#timeline { background: #a3c639; width: 4px; height: 100%; position: fixed; top: 50%; left: 50%; margin-left: -2px; }
+/* line 38, ../sass/_mixin.scss */
+.span1 {
+  margin-top: 1em;
+  width: 60px;
+}
 
+/* line 38, ../sass/_mixin.scss */
+.span2 {
+  margin-top: 1em;
+  width: 140px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span3 {
+  margin-top: 1em;
+  width: 220px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span4 {
+  margin-top: 1em;
+  width: 300px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span5 {
+  margin-top: 1em;
+  width: 380px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span6 {
+  margin-top: 1em;
+  width: 460px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span7 {
+  margin-top: 1em;
+  width: 540px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span8 {
+  margin-top: 1em;
+  width: 620px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span9 {
+  margin-top: 1em;
+  width: 700px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span10 {
+  margin-top: 1em;
+  width: 780px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span11 {
+  margin-top: 1em;
+  width: 860px;
+}
+
+/* line 38, ../sass/_mixin.scss */
+.span12 {
+  margin-top: 1em;
+  width: 940px;
+}
+
+/**
+ * Clearfix
+ */
+/* line 131, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 136, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 140, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/**
+ * Header
+ */
+/* line 148, ../sass/main.scss */
+header[role="header"] {
+  background: #2C7FDD;
+  border-bottom: 1px solid #DDD;
+  height: 350px;
+}
+/* line 156, ../sass/main.scss */
+header[role="header"] h1 a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: url('../images/sitcon.png?1354370534') no-repeat center;
+  text-indent: -999999px;
+}
+/* line 168, ../sass/main.scss */
+header[role="header"] nav h2 {
+  display: none;
+}
+/* line 172, ../sass/main.scss */
+header[role="header"] ul {
+  font-family: "Arimo", sans-serif;
+  padding-left: 6px;
+}
+/* line 176, ../sass/main.scss */
+header[role="header"] ul li {
+  display: inline;
+}
+/* line 179, ../sass/main.scss */
+header[role="header"] ul li a {
+  font-size: 14px;
+  font-size: 1.166666rem;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 188, ../sass/main.scss */
+header[role="header"] ul li .split {
+  color: #84b4eb;
+  font-size: 9px;
+  font-size: 0.75rem;
+  margin: 0 0.5em;
+}
+
+/**
+ * Footer
+ */
 /* line 206, ../sass/main.scss */
-.page { min-height: 100%; }
+footer[role="footer"] {
+  background: #2C7FDD;
+  color: #f2f7fd;
+  text-align: right;
+  padding: 18px 6px;
+  padding: 1.5rem 0.5rem;
+}
 
-/* line 210, ../sass/main.scss */
-.subHeader { color: #4d4d4d; }
-
-/** Main Frame */
+/**
+ * Featured
+ */
 /* line 222, ../sass/main.scss */
-#mainFrame { position: absolute; top: 50%; width: 100%; height: 100%; }
-
+#featured {
+  position: relative;
+  margin-top: -225px;
+}
+/* line 227, ../sass/main.scss */
+#featured .nav_bar {
+  background: #0d0d0d;
+}
 /* line 230, ../sass/main.scss */
-.block { background: #FFF; margin-top: 3em; padding: .5em 1em; position: relative; }
-/* line 238, ../sass/main.scss */
-.block article { padding: 0 1em; }
-/* line 241, ../sass/main.scss */
-.block article h2, .block article h3 { font-family: "Arimo", sans-serif; letter-spacing: .1em; text-transform: uppercase; }
-
-/* line 249, ../sass/main.scss */
-.crossBlock { border: 2px solid #d9d9d9; }
-
+#featured .nav_bar ul {
+  text-align: center;
+  margin: 0;
+}
+/* line 236, ../sass/main.scss */
+#featured .nav_bar li {
+  list-style: none;
+  display: inline;
+  line-height: 50px;
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+}
+/* line 246, ../sass/main.scss */
+#featured .nav_bar li a {
+  color: white;
+}
 /* line 254, ../sass/main.scss */
-.arrowLeft:before { content: " "; display: block; width: 0; height: 0; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: .5em solid #FFF; position: absolute; top: .5em; left: -0.4em; }
+#featured article header, #featured article p {
+  float: left;
+  clear: left;
+  background: #ECF5FF;
+  padding: 12px 18px;
+  padding: 1rem 1.5rem;
+}
+/* line 265, ../sass/main.scss */
+#featured article header {
+  margin-top: 24px;
+  margin-top: 2rem;
+}
+/* line 270, ../sass/main.scss */
+#featured article p {
+  margin: 0;
+  max-width: 480px;
+  font-size: 13px;
+  line-height: 1.8em;
+  letter-spacing: .2em;
+}
+/* line 281, ../sass/main.scss */
+#featured article .button {
+  text-transform: uppercase;
+}
 
-/* line 274, ../sass/main.scss */
-.arrowRight:after { content: " "; display: block; width: 0; height: 0; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-left: .5em solid #FFF; position: absolute; top: .5em; right: -0.4em; }
+/**
+ * Partner
+ */
+/* line 295, ../sass/main.scss */
+#partner li {
+  list-style: none;
+}
 
-/* line 293, ../sass/main.scss */
-header[role="pageHeader"] { display: none; }
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 328, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
 
-/** Home Page */
-/* line 301, ../sass/main.scss */
-#siteInfo { text-align: center; }
-/* line 304, ../sass/main.scss */
-#siteInfo .block:first-child { margin-top: 0; }
-/* line 308, ../sass/main.scss */
-#siteInfo h3 { font-weight: normal; }
+/* line 335, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
 
-/** Call for Paper */
-/* line 322, ../sass/main.scss */
-#cfp li, #cfp p { line-height: 1.8em; letter-spacing: .2em; }
+/* line 342, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
 
-/** About */
-/** Session */
-/* line 343, ../sass/main.scss */
-#sessions .tableHeader .block { margin-top: 3em; }
-/* line 348, ../sass/main.scss */
-#sessions .block { margin-top: 1em; margin-bottom: 0; }
-/* line 353, ../sass/main.scss */
-#sessions .sessionTitle { text-align: center; font-size: 14px; font-size: 1.076923rem; font-weight: bold; }
+/* line 347, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
-/* ========================================================================== Media Queries ========================================================================== */
-/* ========================================================================== Helper classes ========================================================================== */
-/* line 384, ../sass/main.scss */
-.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+/* line 359, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
 
-/* line 391, ../sass/main.scss */
-.ir:before { content: ""; display: block; width: 0; height: 100%; }
+/* line 368, ../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
 
-/* line 398, ../sass/main.scss */
-.hidden { display: none !important; visibility: hidden; }
+/* line 373, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
 
-/* line 403, ../sass/main.scss */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* line 378, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
 
-/* line 415, ../sass/main.scss */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+/* line 382, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
 
-/* line 424, ../sass/main.scss */
-.invisible { visibility: hidden; }
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 391, ../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-/* line 429, ../sass/main.scss */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
+  /* line 399, ../sass/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-/* line 434, ../sass/main.scss */
-.clearfix:after { clear: both; }
+  /* line 403, ../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-/* line 438, ../sass/main.scss */
-.clearfix { *zoom: 1; }
+  /* line 407, ../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-/* ========================================================================== Print styles ========================================================================== */
-@media print { /* line 447, ../sass/main.scss */
-  * { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
-  /* line 455, ../sass/main.scss */
-  a, a:visited { text-decoration: underline; }
-  /* line 459, ../sass/main.scss */
-  a[href]:after { content: " (" attr(href) ")"; }
-  /* line 463, ../sass/main.scss */
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  /* Don't show links for images, or javascript/internal links */
-  /* line 473, ../sass/main.scss */
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
-  /* line 478, ../sass/main.scss */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  /* line 483, ../sass/main.scss */
-  thead { display: table-header-group; /* h5bp.com/t */ }
-  /* line 488, ../sass/main.scss */
-  tr, img { page-break-inside: avoid; }
-  /* line 492, ../sass/main.scss */
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  /* line 502, ../sass/main.scss */
-  p, h2, h3 { orphans: 3; widows: 3; }
-  /* line 508, ../sass/main.scss */
-  h2, h3 { page-break-after: avoid; } }
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 418, ../sass/main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 423, ../sass/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 428, ../sass/main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 433, ../sass/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 437, ../sass/main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 447, ../sass/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 453, ../sass/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
