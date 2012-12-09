@@ -16,7 +16,7 @@
 
   $(document).ready(function() {
     slider_banner();
-    return setInterval(slider_banner, 5000);
+    return setInterval(slider_banner, 10000);
   });
 
 }).call(this);
